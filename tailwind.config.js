@@ -4,14 +4,18 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        "bg-dukoreTech":"#072b3d",
-        "btn-dukore":"#ffb20e",
-        "btn-hover-Dukore":"#015b89"
+        "dukoreTech":"#072b3d",
+        "BtnDukore":"#ffb20e",
+        "hoverDukore":"#015b89"
       }
     },
     fontFamily:{
       Quicksand:["Quicksand, sans-serif"]
-    }
+    },
+    container: {
+      center: true,
+      padding: '2rem',
+    },
   },
   plugins: [],
 }
