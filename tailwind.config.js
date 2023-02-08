@@ -13,8 +13,7 @@ module.exports = {
       Quicksand:["Quicksand, sans-serif"]
     },
     container: {
-      center: true,
-      padding: '2rem',
+      center: true
     },
   },
   plugins: [],
