@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,17 +16,17 @@
                     <img src="./dist/asset/DukoreTech-logo-1.png" alt="Dukore Logo" srcset="" class="w-14 h-14">
                 </div>
                 <ul class="flex flex-row justify-between text-white gap-5">
-                    <li>HOME</li>
-                    <li>ABOUT US</li>
-                    <li>SERVICES</li>
-                    <li>CONTACT US</li>
+                    <li class=""> <a href="#home">HOME</a> </li>
+                    <li> <a href="#about"> ABOUT US</a></li>
+                    <li> <a href="#service">SERVICES</a></li>
+                    <li> <a href="#contact">CONTACT US</a></li>
                 </ul>
             </nav>
         </header>
 
     <!-- hearder -->
     <!-- first section -->
-     <section class="flex flex-row justify-between items-center pt-16">
+     <section class="flex flex-row justify-between items-center pt-16 snap-y" id="home">
         <div>
             <div class=" uppercase text-5xl text-white font-bold">
                 excellent <br> creativity,<br> our <br> motivation
@@ -43,8 +43,8 @@
     <!-- first section -->
 
      <!-- about us -->
-     <section class="mt-32">
-         <div class="text-center text-5xl text-BtnDukore capitalize font-extrabold drop-shadow-2xl">about us</div>
+     <section class="mt-32" id="about">
+         <div class="text-center text-5xl text-BtnDukore capitalize font-extrabold" >about us</div>
         <div class="flex flex-row justify-between mt-16">
             <div class="">
                 <img src="./dist/asset/about.png" alt="about us" >
@@ -76,7 +76,7 @@
     <!-- About us -->
 
     <!-- service us -->
-    <section class="mt-32">
+    <section class="mt-32" id="service">
         <div class="text-center text-5xl text-BtnDukore capitalize font-extrabold">services</div>
        <div class="flex flex-row justify-between mt-16 gap-5">
 
@@ -99,64 +99,117 @@
    <!-- service us -->
 
     <!-- contact us -->
-    <section class="mt-32">
+    <section class="mt-32" id="contact">
         <div class="text-center text-5xl text-BtnDukore capitalize font-extrabold">contact us</div>
        <div class="flex flex-row justify-between mt-16">
 
-           <div class="text-white">
-                <div>+257 68 72 44 98 </div>
-                <div>info@dukoretech.com</div> 
-                <div>Av. Mwaro, No13, Rohero, Bujumbura-Burundi</div> 
-                             
-                <img src="./dist/asset/web dev.png" alt="contact us" class="w-96 h-96" >
+           <div class="text-white basis-2/5">
+                <div class="flex gap-2 mt-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffb20e" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                    </svg>
+                       
+                  +257 68 72 44 98 
+                </div>
+                <div class="flex gap-2 mt-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffb20e" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                      </svg>
+                      
+                    info@dukoretech.com
+                </div> 
+                <div class="flex gap-2 mt-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffb20e" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                      </svg>
+                      
+                    Av. Mwaro, No13, Rohero, Bujumbura-Burundi
+                </div> 
+                  
+                <img src="./dist/asset/map.png" alt="contact us" class="mt-3" >
            </div>
 
-            <!-- solid -->
-            <div class="">
-                <div class="mt-8 max-w-md">
-                  <div class="grid grid-cols-1 gap-6">
+        <!-- solid -->
+            <div class="basis-1/2">
+                <div class="mt-8">
+                    <div class="grid grid-cols-1 gap-6">
 
                     <label class="block">
-                      <span class="text-white font-bold">Full name <b class=" text-red-700">*</b></span>
-                      <input type="text" class="mt-1 block w-full text-white rounded-md bg-transparent border-BtnDukore focus:border-gray-500 focus:bg-transparent focus:ring-0 "
+                        <span class="text-white font-bold">Full name <b class=" text-red-700 animate-ping duration-500">*</b></span>
+                        <input type="text" class="mt-1 block w-full text-white rounded-md bg-transparent border-BtnDukore focus:border-gray-500 focus:bg-transparent focus:ring-0 "
                         placeholder="E.g Patrick" />
                     </label>
 
                     <label class="block">
-                        <span class="text-white">Email address <b class=" text-red-700">*</b></span>
+                        <span class="text-white">Email address <b class=" text-red-700 animate-ping">*</b></span>
                         <input type="email" class="mt-1 block w-full text-white rounded-md bg-transparent border-BtnDukore focus:border-gray-500 focus:bg-transparent focus:ring-0 "
-                          placeholder="E.g Patrick@example.com" />
-                      </label>
+                            placeholder="E.g Patrick@example.com" />
+                        </label>
 
-                      <label class="block">
+                        <label class="block">
                         <span class="text-white">Phone Number</span>
                         <input type="tel" class="mt-1 block w-full text-white rounded-md bg-transparent border-BtnDukore focus:border-gray-500 focus:bg-transparent focus:ring-0 "
-                          placeholder="+257 75 567 890 " />
-                      </label>
+                            placeholder="+257 75 567 890 " />
+                        </label>
 
                     <label class="block">
-                      <span class="text-white">Message <b class=" text-red-700">*</b></span>
-                      <textarea class=" mt-1 block w-full rounded-md text-white bg-transparent border-BtnDukore focus:border-gray-500 focus:bg-transparent focus:ring-0" rows="3"
-                      ></textarea>
+                        <span class="text-white">Message <b class=" text-red-700 animate-ping">*</b></span>
+                        <textarea class=" mt-1 block w-full rounded-md text-white bg-transparent border-BtnDukore focus:border-gray-500 focus:bg-transparent focus:ring-0" rows="3"
+                        ></textarea>
                     </label>
 
                     <div class="block">
-                      <div class="mt-2">
-                       <button class=" uppercase bg-BtnDukore text-white py-2 hover:bg-hoverDukore px-5 rounded-sm">send message</button>
+                        <div class="mt-2">
+                        <button class=" uppercase bg-BtnDukore text-white py-2 hover:bg-hoverDukore px-5 rounded-sm">send message</button>
 
-                      </div>
+                        </div>
                     </div>
-                  </div>
+                    </div>
                 </div>
             </div> 
-              <!-- solid -->
-
-       </div>
-      
-       
+            <!-- solid -->
+       </div>    
     </section>
    <!-- contact us -->
 
+    <!-- footer  -->
+    <footer class="mt-56">
+        <div class=" border-t-2 mx-48"></div>
+    <div class="flex flex-row justify-between mt-16 gap-5">
+        <div class="flex gap-2">
+            <div class="p-3 rounded-full hover:animate-pulse cursor-pointer">
+                <a href="tel:+25775565782">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" class="w-6 h-6 hover:stroke-orange-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                </svg>   
+            </a>         
+            </div>
+
+            <div class="p-3 rounded-full hover:animate-pulse cursor-pointer">
+                <a href="mailto:irakozep18.pi@gmail.com">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6 hover:stroke-orange-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                  </svg>    
+                </a>       
+            </div>
+
+            <div class="p-3 rounded-full border-white hover:animate-pulse cursor-pointer">
+                <a href="http://dukoreTech.com">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6 hover:stroke-orange-400">
+                    <path d="M21.721 12.752a9.711 9.711 0 00-.945-5.003 12.754 12.754 0 01-4.339 2.708 18.991 18.991 0 01-.214 4.772 17.165 17.165 0 005.498-2.477zM14.634 15.55a17.324 17.324 0 00.332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 00.332 4.647 17.385 17.385 0 005.268 0zM9.772 17.119a18.963 18.963 0 004.456 0A17.182 17.182 0 0112 21.724a17.18 17.18 0 01-2.228-4.605zM7.777 15.23a18.87 18.87 0 01-.214-4.774 12.753 12.753 0 01-4.34-2.708 9.711 9.711 0 00-.944 5.004 17.165 17.165 0 005.498 2.477zM21.356 14.752a9.765 9.765 0 01-7.478 6.817 18.64 18.64 0 001.988-4.718 18.627 18.627 0 005.49-2.098zM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 001.988 4.718 9.765 9.765 0 01-7.478-6.816zM13.878 2.43a9.755 9.755 0 016.116 3.986 11.267 11.267 0 01-3.746 2.504 18.63 18.63 0 00-2.37-6.49zM12 2.276a17.152 17.152 0 012.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0112 2.276zM10.122 2.43a18.629 18.629 0 00-2.37 6.49 11.266 11.266 0 01-3.746-2.504 9.754 9.754 0 016.116-3.985z" />
+                  </svg>
+                </a> 
+                             
+            </div>
+        </div>
+       
+        <div class="text-white">
+            © 2023 - DukoreTech - All Rights Reserved
+        </div>
+    </div>      
+    </footer>
+    <!-- footer -->
 
 </body>
 </html>
